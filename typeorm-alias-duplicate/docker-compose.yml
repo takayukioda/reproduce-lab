@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres:9.6.11
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=typeorm
+      - POSTGRES_DB=typeorm
+      - POSTGRES_PASSWORD=typeorm
