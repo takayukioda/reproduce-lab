@@ -1,7 +1,7 @@
 import { Injectable, Optional } from '@nestjs/common';
 import * as raw from '../fake.json';
 
-export interface User {
+export interface Member {
   first_name: string;
   last_name: string;
   email: string;
@@ -16,8 +16,8 @@ interface ListUser {
 }
 
 @Injectable()
-export class UserService {
-  constructor(@Optional() private users: User[]) {
+export class MemberService {
+  constructor(@Optional() private users: Member[]) {
     this.users = raw as any;
   }
 

@@ -1,13 +1,13 @@
 import { Controller, Get, Query } from '@nestjs/common';
-import { UserService } from './user.service';
+import { FriendService } from './friend.service';
 
 class ListUserReq {
   constructor(readonly page: number = 1, readonly perPage: number = 20) {}
 }
 
-@Controller('customers')
-export class UserController {
-  constructor(private readonly userService: UserService) {}
+@Controller('friends')
+export class FriendController {
+  constructor(private readonly userService: FriendService) {}
 
   @Get('')
   listUsers(@Query() query: ListUserReq) {
