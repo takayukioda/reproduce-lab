@@ -2,6 +2,14 @@
 
 Try reproduce memory leak on e2e test.
 
+## Related issue
+
+It seems related with following issue.
+https://github.com/kulshekhar/ts-jest/issues/1967
+https://github.com/facebook/jest/issues/10550
+
+I thought that unkilled instances are the issue, but it seems source code cache is the cause of the trouble.
+
 ## Increasing heap usage
 
 ```shell
