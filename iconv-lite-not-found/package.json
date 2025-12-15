@@ -1,0 +1,13 @@
+{
+  "name": "iconv-lite-not-found",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "iconv-lite": "0.7.1",
+    "typescript": "5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.2"
+  }
+}
